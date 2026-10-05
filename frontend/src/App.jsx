@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import Sidebar from "./components/Sidebar/Sidebar";
 import Navbar from "./components/Navbar/Navbar";
+
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Products from "./pages/Products/Products";
 import StockMovement from "./pages/StockMovement/StockMovement";
