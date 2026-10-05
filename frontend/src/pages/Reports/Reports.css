@@ -1,0 +1,244 @@
+.reports-page {
+  width: 100%;
+}
+
+.reports-refresh-button {
+  border: none;
+  border-radius: 9px;
+  padding: 11px 18px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.reports-refresh-button:hover {
+  background: #1d4ed8;
+  box-shadow: 0 5px 14px rgba(37, 99, 235, 0.2);
+}
+
+.reports-error {
+  margin-bottom: 18px;
+  padding: 13px 16px;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.reports-loading {
+  padding: 60px 20px;
+  text-align: center;
+  color: #7b8494;
+  font-size: 14px;
+}
+
+.reports-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.reports-summary-card {
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.reports-summary-card span {
+  display: block;
+  color: #7b8494;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.reports-summary-card strong {
+  display: block;
+  margin-top: 9px;
+  color: #172033;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.reports-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 22px;
+}
+
+.reports-card {
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  overflow: hidden;
+}
+
+.reports-card-header {
+  padding: 20px 22px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.reports-card-header h3 {
+  color: #172033;
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.reports-card-header p {
+  margin-top: 5px;
+  color: #7b8494;
+  font-size: 13px;
+}
+
+.reports-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.reports-table-container table {
+  min-width: 550px;
+}
+
+.reports-table-container th {
+  padding: 13px 20px;
+  background: #fafbfc;
+  color: #8a93a3;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.reports-table-container td {
+  padding: 15px 20px;
+  color: #4b5563;
+  font-size: 13px;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.reports-table-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.reports-table-container tbody tr:hover {
+  background: #fafcff;
+}
+
+.reports-table-container td strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+.reports-low-stock {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.reports-movement-list {
+  padding: 6px 0;
+}
+
+.reports-movement-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.reports-movement-item:last-child {
+  border-bottom: none;
+}
+
+.reports-movement-icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.movement-in {
+  background: #ecfdf5;
+  color: #16a34a;
+}
+
+.movement-out {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.reports-movement-details {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.reports-movement-details strong {
+  overflow: hidden;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.reports-movement-details span {
+  color: #8a93a3;
+  font-size: 11px;
+}
+
+.reports-movement-quantity {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.quantity-in {
+  color: #16a34a;
+}
+
+.quantity-out {
+  color: #dc2626;
+}
+
+.reports-empty {
+  padding: 50px 20px;
+  text-align: center;
+  color: #8992a3;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .reports-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reports-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .reports-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reports-refresh-button {
+    width: 100%;
+  }
+}

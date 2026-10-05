@@ -1,0 +1,268 @@
+.stock-page {
+  width: 100%;
+}
+
+.stock-success,
+.stock-error {
+  margin-bottom: 18px;
+  padding: 13px 16px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.stock-success {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.stock-error {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.stock-form-card,
+.stock-card {
+  margin-bottom: 22px;
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  overflow: hidden;
+}
+
+.stock-card-header {
+  padding: 20px 22px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.stock-card-header h3 {
+  color: #172033;
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.stock-card-header p {
+  margin-top: 5px;
+  color: #7b8494;
+  font-size: 13px;
+}
+
+.stock-form-card form {
+  padding: 22px;
+}
+
+.stock-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1fr auto;
+  align-items: end;
+  gap: 18px;
+}
+
+.stock-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.stock-form-group label {
+  color: #4b5563;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stock-form-group input,
+.stock-form-group select,
+.stock-filters input,
+.stock-filters select {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #dfe3ea;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #374151;
+  font-size: 13px;
+}
+
+.stock-form-group input:focus,
+.stock-form-group select:focus,
+.stock-filters input:focus,
+.stock-filters select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.stock-form-action {
+  display: flex;
+  align-items: flex-end;
+}
+
+.stock-in-button,
+.stock-out-button {
+  height: 40px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.stock-in-button {
+  background: #16a34a;
+}
+
+.stock-in-button:hover {
+  background: #15803d;
+}
+
+.stock-out-button {
+  background: #dc2626;
+}
+
+.stock-out-button:hover {
+  background: #b91c1c;
+}
+
+.stock-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stock-filters {
+  display: flex;
+  gap: 10px;
+}
+
+.stock-filters input {
+  width: 230px;
+}
+
+.stock-filters select {
+  width: 150px;
+}
+
+.stock-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.stock-table-container table {
+  min-width: 900px;
+}
+
+.stock-table-container th {
+  padding: 13px 20px;
+  background: #fafbfc;
+  color: #8a93a3;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.stock-table-container td {
+  padding: 15px 20px;
+  color: #4b5563;
+  font-size: 13px;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.stock-table-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.stock-table-container tbody tr:hover {
+  background: #fafcff;
+}
+
+.stock-table-container td strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+.stock-sku {
+  color: #6b7280;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.stock-badge {
+  display: inline-flex;
+  min-width: 42px;
+  justify-content: center;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.stock-badge-in {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.stock-badge-out {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.stock-empty {
+  padding: 50px 20px;
+  text-align: center;
+  color: #8992a3;
+  font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .stock-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stock-form-action {
+    align-items: stretch;
+  }
+
+  .stock-in-button,
+  .stock-out-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .stock-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .stock-filters {
+    width: 100%;
+  }
+
+  .stock-filters input {
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .stock-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stock-filters {
+    flex-direction: column;
+  }
+
+  .stock-filters input,
+  .stock-filters select {
+    width: 100%;
+  }
+}

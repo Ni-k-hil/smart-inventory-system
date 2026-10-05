@@ -1,0 +1,252 @@
+.products-page {
+  width: 100%;
+}
+
+.products-primary-button {
+  border: none;
+  border-radius: 9px;
+  padding: 11px 18px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.products-primary-button:hover {
+  background: #1d4ed8;
+  box-shadow: 0 5px 14px rgba(37, 99, 235, 0.2);
+}
+
+.products-success,
+.products-error {
+  margin-bottom: 18px;
+  padding: 13px 16px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.products-success {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.products-error {
+  border: 1px solid #fecaca;
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.products-form-card,
+.products-card {
+  margin-bottom: 22px;
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+  overflow: hidden;
+}
+
+.products-card-header {
+  padding: 20px 22px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.products-card-header h3 {
+  color: #172033;
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.products-card-header p {
+  margin-top: 5px;
+  color: #7b8494;
+  font-size: 13px;
+}
+
+.products-form-card form {
+  padding: 22px;
+}
+
+.products-form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.products-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.products-form-group label {
+  color: #4b5563;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.products-form-group input,
+.products-form-group select,
+.products-filters input,
+.products-filters select {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #dfe3ea;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #374151;
+  font-size: 13px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.products-form-group input:focus,
+.products-form-group select:focus,
+.products-filters input:focus,
+.products-filters select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.products-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 22px;
+}
+
+.products-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.products-filters {
+  display: flex;
+  gap: 10px;
+}
+
+.products-filters input {
+  width: 230px;
+}
+
+.products-filters select {
+  width: 160px;
+}
+
+.products-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.products-table-container table {
+  min-width: 850px;
+}
+
+.products-table-container th {
+  padding: 13px 20px;
+  background: #fafbfc;
+  color: #8a93a3;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.products-table-container td {
+  padding: 15px 20px;
+  color: #4b5563;
+  font-size: 13px;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.products-table-container tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.products-table-container tbody tr:hover {
+  background: #fafcff;
+}
+
+.products-table-container td strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+.products-sku {
+  color: #6b7280;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.product-status {
+  display: inline-flex;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.status-good {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-low {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.products-empty {
+  padding: 50px 20px;
+  text-align: center;
+  color: #8992a3;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .products-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .products-filters {
+    width: 100%;
+  }
+
+  .products-filters input {
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-filters {
+    flex-direction: column;
+  }
+
+  .products-filters input,
+  .products-filters select {
+    width: 100%;
+  }
+
+  .products-form-actions {
+    justify-content: stretch;
+  }
+
+  .products-form-actions button {
+    width: 100%;
+  }
+}
